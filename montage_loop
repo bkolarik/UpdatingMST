@@ -1,0 +1,25 @@
+make montage of ab and ba images for online updating test
+for i in $(seq -f "%03g" 1 300)
+do
+montage {A,B}/${i}_{a,b}.jpg -tile 2x1 -geometry '+100+0' ab_$i.jpg;
+done
+
+for i in $(seq -f "%03g" 1 192)
+do
+montage {B,A}/${i}_{b,a}.jpg -tile 2x1 -geometry '+100+0' ba_$i.jpg;
+done
+
+
+
+
+make montage of set 2 (new) images
+
+for i in $(seq -f "%03g" 1 16)
+do
+montage {Set2_A,Set2_B}/${i}_{a,b}.jpg -tile 2x1 -geometry '+100+0' ab_$i.jpg;
+done
+
+for i in $(seq -f "%03g" 1 16)
+do
+montage {Set2_B,Set2_A}/${i}_{b,a}.jpg -tile 2x1 -geometry '+100+0' ba_$i.jpg;
+done

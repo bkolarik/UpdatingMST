@@ -1,0 +1,2 @@
+[06-May-2019 16:07:05 America/Los_Angeles] PHP Warning:  file_put_contents(data/experiment_data.csv): failed to open stream: No such file or directory in /home/stark4/public_html/exp/jsPsych/Updating/write_data.php on line 7
+[06-May-2019 16:34:42 America/Los_Angeles] PHP Warning:  file_put_contents(data/.csv): failed to open stream: No such file or directory in /home/stark4/public_html/exp/jsPsych/Updating/write_data.php on line 7
